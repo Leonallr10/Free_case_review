@@ -1,0 +1,49 @@
+.free-case-panel {
+  flex: 1;
+  padding: 40px;
+  background: #fafafa;
+  position: relative;
+}
+
+.free-case-panel h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.slots-circle {
+  width: 150px;
+  height: 150px;
+  background: purple;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.features svg {
+  margin-right: 10px;
+  color: green;
+}
+
+.contact-btn {
+  background: #d2a679;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+}
