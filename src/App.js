@@ -1,13 +1,11 @@
-// src/App.js
-
 import React from 'react';
 import './App.css';
-import HeroSection from './components/HeroSection';
+import FreeCasePanel from './components/FreeCasePanel';
 
 function App() {
   return (
     <div className="App">
-      <HeroSection />
+      <FreeCasePanel />  {/* ✅ ClaimForm is already inside FreeCasePanel */}
     </div>
   );
 }
