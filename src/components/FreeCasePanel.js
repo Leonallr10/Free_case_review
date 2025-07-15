@@ -6,7 +6,7 @@ const FreeCasePanel = () => {
   return (
     <div className="hero-container">
       <div className="left-panel">
-               <div className="top-section">
+         <div className="top-section">
           <div className="left-side">
             <div className="free-case">
               <h1>Free <br /> Case <br /> Review</h1>
