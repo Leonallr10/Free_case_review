@@ -3,7 +3,7 @@ Below is a **clean, practical example** you can copy and adapt:
 
 ---
 
-## ✅ **Sample `README.md`**
+##  `README.md`**
 
 ```markdown
 # Free Case Review Landing Page
@@ -36,7 +36,7 @@ src/
 ├── App.js
 ├── index.js
 
-````
+```
 
 ---
 
