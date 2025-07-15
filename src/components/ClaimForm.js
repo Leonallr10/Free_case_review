@@ -31,9 +31,9 @@ const ClaimForm = () => {
     onBlur={(e) => { if (!e.target.value) e.target.type = 'text'; }}
   />
   <select>
-    <option>Type of Diagnosis *</option>
-    <option>Mesothelioma</option>
-    <option>Lung Cancer</option>
+    <option style={{ color: "black" }}>Type of Diagnosis *</option>
+    <option style={{ color: "black" }}>Mesothelioma</option>
+    <option style={{ color: "black" }}>Lung Cancer</option>
   </select>
 </div>
 
