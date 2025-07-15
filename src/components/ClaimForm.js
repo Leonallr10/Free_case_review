@@ -13,29 +13,39 @@ const ClaimForm = () => {
         <input type="tel" placeholder="Phone Number *" />
         <input type="email" placeholder="Email ID *" />
       </div>
-      <div className="form-row">
-  <input
-    type="text"
-    placeholder="Date of Birth *"
-    onFocus={(e) => (e.target.type = 'date')}
-    onBlur={(e) => { if (!e.target.value) e.target.type = 'text'; }}
-  />
+     <div className="form-row">
+  <div className="date-wrapper">
+    <input
+      type="text"
+      placeholder="Date of Birth *"
+      onFocus={(e) => (e.target.type = 'date')}
+      onBlur={(e) => { if (!e.target.value) e.target.type = 'text'; }}
+    />
+    <span className="calendar-icon">📅</span>
+  </div>
   <input type="text" placeholder="Job Title *" />
 </div>
 
-   <div className="form-row">
-  <input
-    type="text"
-    placeholder="Date of Diagnosis *"
-    onFocus={(e) => (e.target.type = 'date')}
-    onBlur={(e) => { if (!e.target.value) e.target.type = 'text'; }}
-  />
-  <select>
-    <option style={{ color: "black" }}>Type of Diagnosis *</option>
-    <option style={{ color: "black" }}>Mesothelioma</option>
-    <option style={{ color: "black" }}>Lung Cancer</option>
-  </select>
+<div className="form-row">
+  <div className="date-wrapper">
+    <input
+      type="text"
+      placeholder="Date of Diagnosis *"
+      onFocus={(e) => (e.target.type = 'date')}
+      onBlur={(e) => { if (!e.target.value) e.target.type = 'text'; }}
+    />
+    <span className="calendar-icon">📅</span>
+  </div>
+  <div className="select-wrapper">
+ <select required defaultValue="">
+  <option value="" disabled hidden>Type of Diagnosis *</option>
+  <option value="Mesothelioma">Mesothelioma</option>
+  <option value="Lung Cancer">Lung Cancer</option>
+</select>
+
+  </div>
 </div>
+
 
       <textarea placeholder="Tell us your story (optional)" rows="4"></textarea>
       <div className="checkboxes">
