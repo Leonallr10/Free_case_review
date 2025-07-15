@@ -14,17 +14,29 @@ const ClaimForm = () => {
         <input type="email" placeholder="Email ID *" />
       </div>
       <div className="form-row">
-        <input type="date" placeholder="Date of Birth *" />
-        <input type="text" placeholder="Job Title *" />
-      </div>
-      <div className="form-row">
-        <input type="date" placeholder="Date of Diagnosis *" />
-        <select>
-          <option>Type of Diagnosis *</option>
-          <option>Mesothelioma</option>
-          <option>Lung Cancer</option>
-        </select>
-      </div>
+  <input
+    type="text"
+    placeholder="Date of Birth *"
+    onFocus={(e) => (e.target.type = 'date')}
+    onBlur={(e) => { if (!e.target.value) e.target.type = 'text'; }}
+  />
+  <input type="text" placeholder="Job Title *" />
+</div>
+
+   <div className="form-row">
+  <input
+    type="text"
+    placeholder="Date of Diagnosis *"
+    onFocus={(e) => (e.target.type = 'date')}
+    onBlur={(e) => { if (!e.target.value) e.target.type = 'text'; }}
+  />
+  <select>
+    <option>Type of Diagnosis *</option>
+    <option>Mesothelioma</option>
+    <option>Lung Cancer</option>
+  </select>
+</div>
+
       <textarea placeholder="Tell us your story (optional)" rows="4"></textarea>
       <div className="checkboxes">
         <label>
